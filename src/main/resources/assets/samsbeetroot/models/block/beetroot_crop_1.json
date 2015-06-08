@@ -1,0 +1,6 @@
+{
+	"parent": "block/crop",
+	"textures": {
+		"crop": "samsbeetroot:blocks/beetroot_crop_1"
+	}
+}
