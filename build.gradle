@@ -22,7 +22,7 @@ group= "com.lothrazar.samsbeetroot" // http://maven.apache.org/guides/mini/guide
 archivesBaseName = "SamsBeetroot"
 
 minecraft {
-    version = "1.8-11.14.1.1334"
+    version = "1.8-11.14.3.1446"
 	if(file('../run').exists()){
 		runDir = "../run/eclipse"
 	}else{
