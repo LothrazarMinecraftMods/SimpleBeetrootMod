@@ -34,5 +34,4 @@ public class ClientProxy extends CommonProxy
    			mesher.register(item, 0, new ModelResourceLocation( name , "inventory"));	 
         } 
 	}
- 
 }
