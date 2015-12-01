@@ -152,15 +152,15 @@ public class BlockCropBeetroot extends BlockBush implements IGrowable
 		Random rand = (world instanceof World) ? ((World)world).rand : new Random();
 		if (age >= GROWTHMAX)
 		{
-			int k = MAXDROPPED + fortune;
 			for (int i = 0; i < MAXDROPPED + fortune; i++) 
 			{
 				if (rand.nextInt(15) <= age) 
 				{
 					ret.add(new ItemStack(ItemBlockRegistry.beetrootItem)); 
-					int seeds = rand.nextInt(3);//0,1,2 only
-					if(seeds > 0)
-						ret.add(new ItemStack(ItemBlockRegistry.beetroot_seed,seeds)); 
+					//raised drop chances of getting a seed
+					//the range of seed drops is [1,2,3]
+					if(rand.nextInt(5) > 0)
+						ret.add(new ItemStack(ItemBlockRegistry.beetroot_seed,rand.nextInt(3)+1)); 
 				}
 			}
 		}
